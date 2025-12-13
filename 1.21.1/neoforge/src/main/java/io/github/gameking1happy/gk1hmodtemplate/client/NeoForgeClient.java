@@ -19,7 +19,7 @@ public class NeoForgeClient {
      * Runs the NeoForge client-side mod initializer.
      */
     public NeoForgeClient() {
-        Client.initclient();
+        Client.initClient();
         NeoForge.EVENT_BUS.addListener(NeoForgeClient::joinedWorld);
     }
     /**

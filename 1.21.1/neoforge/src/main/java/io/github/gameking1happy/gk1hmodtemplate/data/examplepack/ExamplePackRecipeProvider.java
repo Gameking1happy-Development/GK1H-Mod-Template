@@ -37,6 +37,6 @@ public class ExamplePackRecipeProvider extends RecipeProvider {
                 .pattern(" D ")
                 .define('D', Items.DIRT)
                 .unlockedBy("has_dirt",has(Items.DIRT))
-                .save(output, fNaP(MOD_ID,"examplerecipe"));
+                .save(output, fnap(MOD_ID,"examplerecipe"));
     }
 }

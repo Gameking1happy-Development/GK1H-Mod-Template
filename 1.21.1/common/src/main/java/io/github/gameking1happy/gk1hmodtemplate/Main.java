@@ -29,22 +29,22 @@ public class Main {
     /**
      * The server configuration for the mod.
      */
-    public static ServerConfig serverconfig = ConfigApiJava.registerAndLoadConfig(ServerConfig::new);
+    public static ServerConfig serverConfig = ConfigApiJava.registerAndLoadConfig(ServerConfig::new);
     /**
      * Example server configuration value.
      */
-    public static boolean ExampleServer = serverconfig.ExampleServer.get();
+    public static boolean exampleServer = serverConfig.exampleServer.get();
     /**
      * Example pack configuration value.
      */
-    public static boolean ExamplePack = serverconfig.ExamplePack.get();
+    public static boolean examplePack = serverConfig.examplePack.get();
     /**
      * Common method for initializing the mod.
      */
     public static void init() {
         LOG.info("Hello from Common init on {}! we are currently in a {} environment!", PLATFORM.getPlatformName(), PLATFORM.getEnvironmentName());
         addClass(new Packs());
-        if (ExampleServer) {
+        if (exampleServer) {
             LOG.info("Example Server is true!");
         } else {
             LOG.info("Example Server is false!");

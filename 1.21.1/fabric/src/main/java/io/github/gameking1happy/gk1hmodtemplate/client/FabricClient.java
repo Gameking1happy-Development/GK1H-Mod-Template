@@ -14,7 +14,7 @@ public class FabricClient implements ClientModInitializer {
      */
     @Override
     public void onInitializeClient() {
-        Client.initclient();
+        Client.initClient();
         /*
          * Sends system message to chat when the client joins a world.
          */

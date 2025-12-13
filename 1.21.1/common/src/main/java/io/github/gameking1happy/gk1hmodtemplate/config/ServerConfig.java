@@ -19,16 +19,16 @@ public class ServerConfig extends Config {
      * Example server configuration value.
      */
     @Comment("Example Server Config Value.")
-    public ValidatedBoolean ExampleServer = new ValidatedBoolean(true);
+    public ValidatedBoolean exampleServer = new ValidatedBoolean(true);
     /**
      * Example pack configuration value.
      */
     @Comment("Example Pack Config Value.")
-    public ValidatedBoolean ExamplePack = new ValidatedBoolean(true);
+    public ValidatedBoolean examplePack = new ValidatedBoolean(true);
     /**
      * The constructor method.
      */
     public ServerConfig() {
-        super(fNaP(MOD_ID, "server_config"));
+        super(fnap(MOD_ID, "server_config"));
     }
 }

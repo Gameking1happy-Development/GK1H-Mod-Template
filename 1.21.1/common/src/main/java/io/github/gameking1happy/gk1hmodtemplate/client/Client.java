@@ -14,17 +14,17 @@ public class Client {
     /**
      * The client configuration for the mod.
      */
-    public static ClientConfig clientconfig = ConfigApiJava.registerAndLoadConfig(ClientConfig::new, RegisterType.CLIENT);
+    public static ClientConfig clientConfig = ConfigApiJava.registerAndLoadConfig(ClientConfig::new, RegisterType.CLIENT);
     /**
      * Example client configuration value.
      */
-    public static boolean ExampleClient = clientconfig.ExampleClient.get();
+    public static boolean exampleClient = clientConfig.exampleClient.get();
     /**
      * Client initialization.
      */
-    public static void initclient() {
+    public static void initClient() {
         LOG.info("Client-side.");
-        if (ExampleClient) {
+        if (exampleClient) {
             LOG.info("Example Client is true!");
         } else {
             LOG.info("Example Client is false!");
