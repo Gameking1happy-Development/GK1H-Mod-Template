@@ -7,13 +7,13 @@ import me.fzzyhmstrs.fzzy_config.validation.misc.ValidatedBoolean;
 
 import static io.github.gameking1happy.gk1hcore.data.CoreData.fnap;
 import static io.github.gameking1happy.gk1hmodtemplate.Main.MOD_ID;
-import static me.fzzyhmstrs.fzzy_config.annotations.Action.RELOG;
+import static me.fzzyhmstrs.fzzy_config.annotations.Action.RESTART;
 
 /**
  * The client configuration for the mod.
  */
 @SuppressWarnings("CanBeFinal")
-@RequiresAction(action = RELOG)
+@RequiresAction(action = RESTART)
 public class ClientConfig extends Config {
     /**
      * Example client configuration value.
